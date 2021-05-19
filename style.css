@@ -344,7 +344,7 @@ nav{
     transition: all 0.5s ease;   
 }
  .btn2:hover{
-         transform: scale(1.05);
+    transform: scale(1.05);
     color: #0077b5;
     text-shadow: 0 0 15px #0077b5;
     transition: all 0.5s ease;  
@@ -402,7 +402,19 @@ nav{
 .watermark{
     position: absolute;
     bottom: 0.6%;
-    right: 50%;
-    font-size: 0.6em;
+    right: 44%;
+    font-size: 0.7em;
     color: white;
 }
+
+.lastone{
+    position: absolute;
+    color: whitesmoke;
+    font-size: 20px;
+    bottom: 7.8em;
+    right: 50%;
+    font-family: consolas;
+    text-shadow: 0 0 15px #0077b5;
+
+}
+
