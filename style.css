@@ -1,0 +1,408 @@
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0,0,0,1);
+
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    color: whitesmoke;
+    padding: 0px 100px;
+}
+
+
+#menubar{
+    position: absolute;
+    top: 33px;
+    left: 60px;
+    color: chartreuse;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 1;
+}
+#sidenav{
+    width: 0px;
+    height: 100vh;
+    background: rgba(230, 212, 212, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 150px;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    clip-path: circle(40% at 0% 0%);
+}
+#sidenav a{
+    text-decoration: none;
+	color: chartreuse;
+	font-size: 30px;
+    font-family: consolas;
+	padding:10px 20px;
+	display: block;
+	margin:20px 40px;
+}
+.icon{
+    position: absolute;
+	bottom: 10%;
+	left: 3%;
+	display: inline;
+	cursor: pointer;
+}
+
+#sidenav a:hover{
+    transform: scale(1.05);
+    color: #0077b5;
+    text-shadow: 0 0 15px #0077b5;
+    transition: all 0.5s ease;  
+}
+
+.h-text{
+    position: absolute;
+    top: 16%;
+    left: 35%;
+    color: chartreuse;
+    z-index: 1;
+}
+.h-text h1{
+    font-family: consolas;
+    font-size: 3.5em;
+}
+.h-text h2{
+    color: whitesmoke;
+}
+.profilepic img{
+    position: absolute;
+    top: 33%;
+    right: 43%;
+    width: 300px;
+     border: 0px;
+    display: inline-block;
+    margin-top: 5px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 100px 100px 100px 100px;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition:  all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+.wrapper .static-text{
+    position: absolute;
+    line-height: 80px;
+    font-family: consolas;
+    top: 17%;
+    right: 51%;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.navbar{
+    position: absolute;
+    top: 1%;
+    left: 80%;
+    transform: translate(-50%,50%);
+    font-size: 25px;
+}
+
+.navbar ul{
+    list-style: none;
+}
+
+.navbar ul li{
+    width: 55px;
+    height: 55px;
+    line-height: 50px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    float: left;
+    z-index: -1;
+}
+
+.navbar ul li .fa{
+    color: #fff;
+    margin-top: 10px;
+}
+
+
+
+.navbar ul li:hover:nth-child(1){
+    border: 5px solid;
+    box-shadow: 0 0 15px #0077b5;
+    transition: all 0.5s ease;
+}
+
+.navbar ul li:hover .fa-linkedin{
+    color: #0077b5;
+    text-shadow: 0 0 15px #0077b5;
+    transition: all 0.5s ease;
+}
+
+.navbar ul li:hover:nth-child(2){
+    border: 5px solid;
+    box-shadow: 0 0 15px #55acee;
+    transition: all 0.5s ease;
+}
+
+.navbar ul li:hover .fa-twitter{
+    color: #55acee;
+    text-shadow: 0 0 15px #55acee;
+    transition: all 0.5s ease;
+}
+
+.navbar ul li:hover:nth-child(3){
+    border: 5px solid;
+    box-shadow: 0 0 15px #0077b5;
+    transition: all 0.5s ease;
+}
+
+.navbar ul li:hover .fa-github{
+    color: #0077b5;
+    text-shadow: 0 0 15px #0077b5;
+    transition: all 0.5s ease;
+}
+.navbar ul li:hover:nth-child(4){
+    border: 5px solid;
+    box-shadow: 0 0 15px #00405d;
+    transition: all 0.5s ease;
+}
+
+.navbar ul li:hover .fa-discord{
+    color: #0077b5;
+    text-shadow: 0 0 15px #0077b5;
+    transition: all 0.5s ease;
+}
+
+#menubar:hover{
+    transform: scale(1.25);
+    color: #0077b5;
+    text-shadow: 0 0 15px #0077b5;
+    transition: all 0.5s ease;    
+}
+
+#gameicon{
+    position: absolute;
+    font-size: 150px;
+    bottom: 16%;
+    right: 46%;
+    padding: 10px;
+    color: whitesmoke;
+    margin-top: 0 40px; 
+}
+
+#gameicon:hover{
+    transform: scale(1.25);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: auto;
+    border: 3px solid #fff;
+    transition: all 0.5s ease;
+    color: #0077b5;
+    text-shadow: 0 0 45px #0077b5;
+      
+}
+
+#gameicon .fa{
+    color: #55acee;
+    text-shadow: 0 0 45px #0077b5;
+}
+
+
+
+/* New Implementation*/
+.wrapper2 h3{
+    position: absolute;
+    top: 3%;
+    left: 47%;
+    transform: translate(-50%, 50%);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: consolas;
+    color: chartreuse;
+    text-shadow: 0 2px 5px beige;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.profilepic img:hover{
+    transform: scale(1.05);
+    border-radius: 5px 5px 5px 5px;
+}
+
+.projects{
+    position: absolute;
+    text-align: center;
+    top: 5%;
+    right: 41%;
+    color: #0077b5;
+    text-shadow:  0 2px 5px beige;
+    font-size: 30px;
+    font-family: consolas;
+}
+
+#work{
+    padding: 0px 100px;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+   
+}
+.card{
+    padding-top: 120px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.cardbox{
+    flex-basis: 25%;
+    background: rgba(0,0,0,0.8);
+    color: whitesmoke;
+    padding: 80px;
+    font-size: 10px;
+    cursor: pointer;
+    margin: 70px 20px;
+    box-shadow: 1px 2px 1px 3px orangered;
+
+}
+.cardbox i{
+    padding: 30px;
+    background: rgba(0,0,0,0.7);
+    color: tomato;
+    font-size: 20px;
+    margin-bottom: 100px;
+}   
+
+.cardbox h2{
+    position: absolute;
+    top: 22px;
+    margin-left: 80px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.cardbox p{
+    font-size: 20px;
+    margin-left: -77px;
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    bottom: 120px;
+    float: left;
+}
+
+.cont{
+    text-align: center;
+}
+
+.btn{
+    position: relative;
+    border: 2px solid #0077b5;
+    background: none;
+    padding: 10px 20px;
+    font-size: 13px;
+    color: whitesmoke;
+    /* font-family: "montserrat"; */
+    transition: 0.8s;
+    margin: 10px;
+}
+
+.btn1, .btn2{
+    /* color: #0077b5; */
+    bottom: -80px;
+
+}
+
+.btn1:hover{
+    transform: scale(1.05);
+    color: #0077b5;
+    text-shadow: 0 0 15px #0077b5;
+    transition: all 0.5s ease;   
+}
+ .btn2:hover{
+         transform: scale(1.05);
+    color: #0077b5;
+    text-shadow: 0 0 15px #0077b5;
+    transition: all 0.5s ease;  
+ }
+
+.slick-dots li.slick-active button:before {
+    /* border-radius: 50%; */
+    /* background-color: greenyellow; */
+    size: 10px;
+    color:orange !important;
+}
+
+.slick-dots li.slick-active button:after {
+    /* border-radius: 50%; */
+    /* background-color: greenyellow; */
+    size: 10px;
+    color:orange !important;
+}
+
+.slick-dots{
+    border-radius: 50%;
+    background-color: #0077b5;
+    size: 10px;
+    color: orangered;
+}
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top: -250px;
+  left: -75px;
+  width: 140%;
+  height: 120%;
+}
+
+
+
+#particles-js {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+#particles-js canvas{
+    z-index: -1;
+}
+.watermark{
+    position: absolute;
+    bottom: 0.6%;
+    right: 50%;
+    font-size: 0.6em;
+    color: white;
+}
