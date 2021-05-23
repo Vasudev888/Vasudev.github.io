@@ -76,8 +76,8 @@ h1.cursor::after {
 #menuToggle a
 {
   text-decoration: none;
-  color: #232323;
-  
+  /* color: #232323; */
+  color: whitesmoke;
   transition: color 0.3s ease;
 }
 
@@ -412,7 +412,7 @@ h1.cursor::after {
 
 
 
-/* .box-img{
+.box-img{
     position: absolute;
     border-radius: 50%;
     width: 20%;
@@ -423,20 +423,59 @@ h1.cursor::after {
     border-color: #55acee;
     transition: all 1s ease-in-out;
     margin-top: 5px;
-} */
+}
 
+.box{
+    border-radius: 30%;
+    width: 70%;
+    height: 65%;
+    background-color: #ffffff10;
+    padding: 100px 100px 100px 100px;
+    color: whitesmoke;
+    /* margin-top: .5%; */
+    margin-left: 7%;
+    font-family: 'Century Gothic', sans-serif;
+    border-style: solid;
+    border-color: #55acee;
+}
+
+.box h5{
+    margin-top: 80px;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow:  0 2px 5px #0077b5;
+    /* position: relative; */
+}
+
+.box h4{
+    margin-top: -70px;
+    font-family: consolas;
+    font-size: 4rem;
+    color: #0077b5;
+    text-shadow:  0 2px 5px beige;
+    /* margin-left: 40%;
+    margin-bottom: -20px; */
+    text-align: center;
+}
+
+.box p{
+    text-align: center;
+    font-size: 1rem;
+    text-shadow:  0 2px 5px #0077b5;
+
+}
 
 
 
 #work{
-    margin-top: 4%;
+    margin-top: 1%;
     padding: 0 0;
     width: 100%;
     /* height: 100vh; */
    
 }
 .post-slider{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     color: whitesmoke;
 }
 
@@ -450,29 +489,34 @@ h1.cursor::after {
 }
 
 .post-slider .post-wrapper{
-    border: 1px dotted red;
     width: 90%;
-    height: 650px;
+    height: 700px;
     overflow: hidden;
     margin: 0px auto;
     padding: 10px 0 10px 0;
 }
 
 .post-slider .post-wrapper .post{
-    background:rgba(0,0,0,.3);
+    background: rgba(230, 212, 212, 0.1);
     width: 500px;
-    height: 650px;
+    height: 700px;
     display: inline-block;
-    margin: 0px 10px;
-    border: 1px solid #0077b5;
+    margin: 0px 20px;
+    border: 1px 1px solid #0077b5;
     border-radius: 7px;
     box-shadow: 1rem 1rem 1rem -1rem #0077b5;
    
 }
 
 .post-slider .post-wrapper .post .post-info{
-    height: 20px;
-    border: 1px solid;
+    height: 335px;
+    text-align: center;
+    font-size: 1rem;
+    /* border: 1px solid #0077b5; */  
+}
+
+.post-slider .post-wrapper .post .post-info h4{
+    font-size: 2rem;
 }
 
 .post-slider .next{
@@ -493,17 +537,15 @@ h1.cursor::after {
     cursor: pointer;
 }
 
-.post-slider .post-wrapper .post .iframe{
-    width: 500px;
-}
 
 
-.cont{
+.post-slider .post-wrapper .post .post-info .cont{
     text-align: center;
+    top: 100%;
 }
 
 .btn{
-    position: relative;
+    cursor: pointer;
     border: 2px solid #0077b5;
     background: none;
     padding: 10px 20px;
@@ -529,7 +571,7 @@ h1.cursor::after {
 
 
 .iframe-container iframe{
-width:553px; 
+width:535px; 
 height: 315px;
 border-top-left-radius: 10px;
 border-top-right-radius:10px;
@@ -538,31 +580,7 @@ border-bottom-right-radius: 10px;
 }
 
 
-.box h5{
-    margin-top: 80px;
-    font-size: 30px;
-    text-align: center;
-    text-shadow:  0 2px 5px #0077b5;
-    /* position: relative; */
-}
 
-.box h4{
-    margin-top: -70px;
-    font-family: consolas;
-    font-size: 60px;
-    color: #0077b5;
-    text-shadow:  0 2px 5px beige;
-    /* margin-left: 40%;
-    margin-bottom: -20px; */
-    text-align: center;
-}
-
-.box p{
-    text-align: center;
-    font-size: 20px;
-    text-shadow:  0 2px 5px #0077b5;
-
-}
 
 
 #particles-js {
@@ -745,6 +763,55 @@ border-bottom-right-radius: 10px;
         font-size: 1.5rem;
     }
 
+    .post-slider .post-wrapper{
+        height: 500px;
+        padding: 5px 5px 5px 5px;
+    }
+    .post-slider .post-wrapper .post{
+        background: rgba(230, 212, 212, 0.3);
+        height: 500px;
+        margin: 0 20px;
+        border-radius: 2px;
+    }
+
+    .post-slider .post-wrapper .post .post-info h4{
+    font-size: 1rem;
+}
+    .post-slider .post-wrapper .post .post-info{
+        font-size: .9rem;
+    }
+
+    .iframe-container iframe{
+        align-items: center;
+        width: 370px;
+        height: 200px; 
+    }
+    #work
+    {
+        margin-top: 0;
+    }
+
+    .box{
+        height: 70%;
+    }
+
+    .box h5{
+         /* height: 65%; */
+         font-size: 1.5rem;
+         margin-top: 60px;
+    }
+
+    .box h4{
+        margin-top: -90px;
+        font-size: 3rem;
+    }
+
+    .box p{
+        font-size: 0.7rem;
+        
+    }
+
+   
 }
 
 .video-container {
