@@ -206,7 +206,7 @@ h1.cursor::after {
     transition: all 0.5s ease;  
 }
 
-.h-text{
+/* .h-text{
     position: absolute;
     top: 16%;
     left: 35%;
@@ -220,7 +220,7 @@ h1.cursor::after {
 }
 .h-text h2{
     color: whitesmoke;
-}
+} */
 /* .profilepic img{
     position: absolute;
     top: 33%;
@@ -261,14 +261,18 @@ h1.cursor::after {
 }
 
 .static-text h2{
-    font-size: 5rem; 
+    font-size: 6rem; 
     text-align: center;
     text-shadow: 0 3px 5px #0077b5;
+    font-family: 'Pacifico', cursive;
+    /* font-family: 'Sacramento', cursive; */
+    
 }
 
 .static-text h3{
     font-size: 2rem ;
     text-shadow: 0 3px 5px #0077b5;
+    font-family: 'Century Gothic', sans-serif;
 }
 
 .static-text h4{
@@ -288,6 +292,7 @@ h1.cursor::after {
     text-shadow: 0 5px 15px #0077b5;
     border: 3px solid #fff;
     border-radius: 20%;
+    padding: 15px;
     /* right: 300px; */
     /* margin-top: 100px; */
 }
@@ -424,6 +429,7 @@ h1.cursor::after {
     border-color: #55acee;
     transition: all 1s ease-in-out;
     margin-top: 5px;
+     box-shadow: 2rem 2rem 2rem -2rem #0077b5;
 }
 
 .box{
@@ -438,26 +444,24 @@ h1.cursor::after {
     font-family: 'Century Gothic', sans-serif;
     border-style: solid;
     border-color: #55acee;
+     box-shadow: 2rem 2rem 2rem -2rem #0077b5;
 }
 
 .box h5{
-    margin-top: 80px;
+    margin-top: 20px;
     font-size: 3rem;
     text-align: center;
     text-shadow:  0 2px 5px #0077b5;
-    /* position: relative; */
 }
 
-.box h4{
+/* .box h4{
     margin-top: -70px;
     font-family: consolas;
     font-size: 4rem;
     color: #0077b5;
     text-shadow:  0 2px 5px beige;
-    /* margin-left: 40%;
-    margin-bottom: -20px; */
     text-align: center;
-}
+} */
 
 .box p{
     text-align: center;
@@ -481,13 +485,23 @@ h1.cursor::after {
 }
 
 .post-slider .slider-title{
+     position: relative;
+    padding: 10px;
+    border-radius: 20px;
+    align-items: center;
+    width: 46%;
+     /* border: 1px solid whitesmoke; */
+     background: rgba(230, 212, 212, 0.3);
     text-align: center;
     margin: 30px auto;
     /* font-family: 'candal' serif; */
-    font-family: consolas;
-    color: #0077b5;
+    /* font-family: consolas; */
+    font-family: 'Century Gothic', sans-serif;
+    /* color: #0077b5; */
+    color: whitesmoke;
     font-size: 3rem;
-    text-shadow:  0 1px 2px beige;
+    text-shadow:  0 1px 2px #0077b5;
+    box-shadow: 2rem 2rem 2rem -2rem #0077b5;
 }
 
 .post-slider .post-wrapper{
@@ -514,11 +528,14 @@ h1.cursor::after {
    
 }
 
+
+
 .post-slider .post-wrapper .post .post-info{
     
     height: 335px;
-    text-align: center;
+    text-align: left;
     font-size: 1.5rem;
+    padding-left: 10px;
     /* border: 1px solid #0077b5; */  
 }
 
@@ -605,7 +622,7 @@ border-bottom-right-radius: 20px;
     display: block;
 }
 .iframe-container a:hover {
-    background-color: rgba(230, 212, 212, 0.1);
+    background-color: rgba(0,0,0,.5);
 }
 
 
@@ -644,12 +661,23 @@ border-bottom-right-radius: 20px;
 
 
 .stitle{
-    color: whitesmoke;
+    position: relative;
+    padding: 10px;
+    border-radius: 20px;
+    background: rgba(230, 212, 212, 0.3);
+    left: 27%;
+    align-items: center;
+    width: 46%;
+    /* border: 1px solid #0077b5; */
+    /* font-family: consolas; */
+    font-family: 'Century Gothic', sans-serif;
+    color: beige;
     text-align: center;
     font-size: 4rem;
-    text-shadow:  0 2px 5px #0077b5;
+    text-shadow:  0 1px 2px #0077b5;
+    box-shadow: 2rem 2rem 2rem -2rem #0077b5;
 }
-
+/* 
 .skills h7{
     font-size: 1.5rem;
     text-align: left;
@@ -668,6 +696,16 @@ border-bottom-right-radius: 20px;
     color: whitesmoke;
     list-style: none;
    
+} */
+
+.watermark{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    color: whitesmoke;
+    font-size: .7rem;
+    text-align: end;
+
 }
 
 table{
@@ -707,7 +745,7 @@ th {
   font-size: 4rem;
 }
       .static-text h2{
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .static-text h3{
     font-size: 1.2rem ;
@@ -745,6 +783,7 @@ th {
         border-radius: 10px;
     }
 
+
     .post-slider .slider-title{
         font-size: 2rem;
     }
@@ -777,14 +816,14 @@ th {
 
     .box h5{
          /* height: 65%; */
-         font-size: 1.5rem;
-         margin-top: 60px;
+         font-size: 1.7rem;
+         margin-top: 5px;
     }
 
-    .box h4{
-        margin-top: -90px;
+    /* .box h4{
+        margin-top: -50px;
         font-size: 3rem;
-    }
+    } */
 
     .box p{
         font-size: .9rem;
