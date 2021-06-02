@@ -16,14 +16,14 @@ html, body {
 
 .skills-bar-container {
     /* background: rgba(230, 212, 212, 0.1); */
-    background: rgba(0,0,0,.8);
+    background: rgba(0,0,0,.9);
     border: 1px solid #0077b5;
-    box-shadow: 1rem 1rem 1rem -1rem #0077b5;;
+    box-shadow: 1rem 1rem 1rem -1rem #0077b5;
     border-radius: 10px;
   position: relative;
   width: 47%;
   min-width: 300px;
-  top: 20%;
+  top: 18%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -246,6 +246,6 @@ html, body {
 
 @media screen and (max-width:1660px){
         .skills-bar-container{
-        top: 25%;
+        top: 30%;
     }
 }
